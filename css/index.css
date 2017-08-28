@@ -1,0 +1,135 @@
+/*header*/
+header{
+    padding: 15px 0;
+}
+.header-wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo span{
+    font: normal 28px/28px poppins;
+}
+.nav a{
+    font: normal 14px/35px "微软雅黑";
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 15px;
+}
+.nav a:hover{
+    color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+.input-group{
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+}
+.search{
+    border: none;
+    width: 40%;
+    outline: none;
+}
+.search:focus{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    transition: 0.3s;
+}
+/*swiper*/
+.swiper{
+    height: 75vw;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*backgroud*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+/*display*/
+.display{
+    padding: 30px 100px;
+    max-width: 1150px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.display dt{
+    width: 100px;
+    height: 60px;
+    border-bottom: 4px solid black;
+    padding: 15px 0;
+    margin: 0 auto;
+    font: bold 20px/30px "微软雅黑";
+    margin-bottom: 10px;
+    text-align: center;
+}
+.shop-list{
+    margin-top: 20px;
+}
+.shop-list-cell{
+    width: 350px;
+    height: 266px;
+    position: relative;
+    color: white;
+    font: bold 35px/250px "微软雅黑 Light";
+    text-align: center;
+}
+.shop-list-cell img{
+    width: 100%;
+}
+.shop-list-cell div{
+    position: absolute;
+    z-index: 100;
+    color: white;
+    top:0;
+    width: 100%;
+    text-align: center;
+}
+.shop-list-cell::after{
+    content: "";
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0;
+    top:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.shop-list-cell:hover::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.shop-list-cell:hover  span{
+    transition: 0.2s;
+    font-size: 45px;
+}
+.about-us{
+    font-size: 18px;
+    padding: 20px 20px;
+}
+.about-us p{
+    text-indent:2em;
+}
